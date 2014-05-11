@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Users/martin/Google Drive/Personal/Eagle/Libraries/selfmade.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/41xx.lbr"
@@ -344,10 +345,10 @@ UsedLibrary="/Applications/EAGLE-6.5.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="360 248 1151 829"
+Loc="298 292 1089 873"
 State=2
 Number=0
 
 [Desktop]
-Screen="1440 900"
+Screen="3360 900"
 Window="Win_1"

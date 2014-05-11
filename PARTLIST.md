@@ -10,6 +10,7 @@ All parts listed here are subject to change.
 | Tactile Switch    | Various         | SMD?  |   1 |                  0.60 |
 | Resistor          | 10 kOhm         | 0805  |   3 |                  0.30 |
 | Resistor          | 1 kOhm          | 0805  |   1 |                  0.10 |
+| Resistor          | 2.2 kOhm        | 0805  |   2 |                  0.20 |
 | Transistor        | tbd             | SOT23 |   1 |                  0.05 |
 | PCB               |                 |       |   1 |                 ~5.00 |
 | Housing           |                 |       |   1 |                 ~3.50 |
@@ -19,7 +20,8 @@ All parts listed here are subject to change.
 module (to enable UART mode). A switch could be mounted either flat or sideways,
 depending on what will be better to incorporate in the case design. The
 remaining resistors and the transistor are required for the level shift from
-3.3V GPS TX to 5V GPS DATA input of the camera.
+3.3V GPS TX to 5V GPS DATA input of the camera. For Baudrate 4800, the GPS
+module needs two pull-ups (2k2) on GPIO0 and GPIO1.
 
 The PCB price is a very rough approximation if we manufacture just a single
 prototype. If you have the equipment to make PCBs on your own, or if one would
