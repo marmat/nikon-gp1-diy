@@ -41,6 +41,9 @@ Required Parts
 * Housing for the parts, ideally fitting on camera's the hot shoe mount.
 * Supporting electronics for voltage regulation etc.
 
+A rough list of required parts and first sketches of the casing can be found in
+[PARTLIST.md](PARTLIST.md).
+
 
 ### GPS
 
@@ -66,7 +69,7 @@ e.g. in your local [FabLab](http://en.wikipedia.org/wiki/Fablab) either very
 cheaply or usually even for free.
 
 
-### Supporting Electrocincs
+### Supporting Electronics
 
 If we use the A2235H, we will have to use a voltage regulator since the module's
 operating voltage is at 3.3V. From previous projects, the LP2985-33 low dropout
