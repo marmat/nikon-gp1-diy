@@ -10,8 +10,8 @@ required. Instead, we can attach the GPS module directly to the camera.
 **Project Status:**
 
 ```
-[i] planning, searching for parts
-[ ] schematics design
+[x] planning, searching for parts
+[i] schematics design
 [ ] functional prototype
 [ ] PCB design
 [ ] housing design
