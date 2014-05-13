@@ -74,6 +74,12 @@ Nikon D5000:
 
 ![Paper Prototype](paper_proto.jpg)
 
+Alternatively, the cable could be removed completely and instead the plug
+soldered directly onto the board. This might allow the module to be mounted to
+the camera's side if all the dimensions work out (tbd):
+
+![Paper Prototype 2](paper_proto2.jpg)
+
 Subtracting the boss height and PCB thickness, we have 6.4mm height left for
 compontents. This is **not enough** to fit the GPS module with a max. height of
 7.11mm. We can instead use the Hammond 1551**M**BK with a total height of 20mm
