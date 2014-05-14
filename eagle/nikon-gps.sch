@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,13 +39,13 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -277,41 +277,6 @@ package type OT</description>
 <rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
 </package>
-<package name="AKL059-03">
-<wire x1="-0.1" y1="0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-0.1" x2="0.1" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.1" y1="-0.1" x2="0.1" y2="0.1" width="0.127" layer="21"/>
-<wire x1="0.1" y1="0.1" x2="-0.1" y2="0.1" width="0.127" layer="21"/>
-<wire x1="3.4" y1="0.1" x2="3.4" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="3.4" y1="-0.1" x2="3.6" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-0.1" x2="3.6" y2="0.1" width="0.127" layer="21"/>
-<wire x1="3.6" y1="0.1" x2="3.4" y2="0.1" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="0.1" x2="-3.6" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="-0.1" x2="-3.4" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="-0.1" x2="-3.4" y2="0.1" width="0.127" layer="21"/>
-<wire x1="-3.4" y1="0.1" x2="-3.6" y2="0.1" width="0.127" layer="21"/>
-<wire x1="-5.2" y1="2.8" x2="-5.2" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="-5.2" y1="-3.7" x2="5.2" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="5.2" y1="-3.7" x2="5.2" y2="2.8" width="0.127" layer="21"/>
-<wire x1="5.2" y1="2.8" x2="-5.2" y2="2.8" width="0.127" layer="21"/>
-<wire x1="-1" y1="2" x2="-1" y2="-3" width="0.0512" layer="21"/>
-<wire x1="-1" y1="-3" x2="1" y2="-3" width="0.0512" layer="21"/>
-<wire x1="1" y1="-3" x2="1" y2="2" width="0.0512" layer="21"/>
-<wire x1="1" y1="2" x2="-1" y2="2" width="0.0512" layer="21"/>
-<wire x1="2.5" y1="2" x2="2.5" y2="-3" width="0.0512" layer="21"/>
-<wire x1="2.5" y1="-3" x2="4.5" y2="-3" width="0.0512" layer="21"/>
-<wire x1="4.5" y1="-3" x2="4.5" y2="2" width="0.0512" layer="21"/>
-<wire x1="4.5" y1="2" x2="2.5" y2="2" width="0.0512" layer="21"/>
-<wire x1="-4.5" y1="2" x2="-4.5" y2="-3" width="0.0512" layer="21"/>
-<wire x1="-4.5" y1="-3" x2="-2.5" y2="-3" width="0.0512" layer="21"/>
-<wire x1="-2.5" y1="-3" x2="-2.5" y2="2" width="0.0512" layer="21"/>
-<wire x1="-2.5" y1="2" x2="-4.5" y2="2" width="0.0512" layer="21"/>
-<smd name="2" x="0" y="1.5" dx="3.4" dy="1" layer="1" rot="R90"/>
-<smd name="3" x="3.5" y="1.5" dx="3.4" dy="1" layer="1" rot="R90"/>
-<smd name="1" x="-3.5" y="1.5" dx="3.4" dy="1" layer="1" rot="R90"/>
-<text x="-6" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="7" y="-4" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="GPS-A2235-H">
@@ -377,19 +342,6 @@ package type OT</description>
 <pin name="I/O_VCC" x="20.32" y="-2.54" length="middle" direction="oc" rot="R180"/>
 <text x="15.24" y="10.16" size="1.6764" layer="95" rot="R180">&gt;NAME</text>
 <text x="-15.24" y="-10.16" size="1.6764" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="POL-03">
-<wire x1="0" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94" curve="-180"/>
-<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="7.62" y="-7.62" size="1.27" layer="96" rot="R180">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
-<pin name="1" x="5.08" y="5.08" visible="pad" length="middle" rot="R180"/>
-<pin name="3" x="5.08" y="-5.08" visible="pad" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -473,23 +425,6 @@ package type OT</description>
 <connect gate="G$1" pin="I/O_VL" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
 <connect gate="G$1" pin="VL" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AKL059-03" prefix="SV">
-<gates>
-<gate name="G$1" symbol="POL-03" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AKL059-03">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6321,6 +6256,45 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="wirepad">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SMD1,27-2,54">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMD2" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD1,27-2,54">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6335,14 +6309,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="IC2" library="selfmade" deviceset="LP2985" device="SOT"/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="IC3" library="selfmade" deviceset="MAX3370" device=""/>
-<part name="SV1" library="selfmade" deviceset="AKL059-03" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -6351,6 +6324,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="M1206" value="2k2"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="M1206" value="2k2"/>
+<part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD2" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD3" library="wirepad" deviceset="SMD2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6362,10 +6338,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="93.98" y1="55.88" x2="93.98" y2="15.24" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="97"/>
 <wire x1="20.32" y1="15.24" x2="20.32" y2="55.88" width="0.1524" layer="97"/>
-<wire x1="241.3" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="97"/>
+<wire x1="238.76" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="97"/>
 <wire x1="213.36" y1="147.32" x2="213.36" y2="109.22" width="0.1524" layer="97"/>
-<wire x1="213.36" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="97"/>
-<wire x1="241.3" y1="109.22" x2="241.3" y2="147.32" width="0.1524" layer="97"/>
+<wire x1="213.36" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="97"/>
+<wire x1="238.76" y1="109.22" x2="238.76" y2="147.32" width="0.1524" layer="97"/>
 <wire x1="200.66" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="97"/>
 <wire x1="129.54" y1="147.32" x2="129.54" y2="109.22" width="0.1524" layer="97"/>
 <wire x1="129.54" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="97"/>
@@ -6383,7 +6359,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
 <instance part="IC3" gate="G$1" x="165.1" y="132.08"/>
-<instance part="SV1" gate="G$1" x="233.68" y="129.54" rot="MR0"/>
 <instance part="GND1" gate="1" x="220.98" y="116.84" rot="MR0"/>
 <instance part="GND2" gate="1" x="71.12" y="81.28"/>
 <instance part="+3V1" gate="G$1" x="86.36" y="45.72" rot="R270"/>
@@ -6399,16 +6374,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R1" gate="G$1" x="40.64" y="114.3"/>
 <instance part="R2" gate="G$1" x="76.2" y="152.4"/>
 <instance part="R3" gate="G$1" x="76.2" y="144.78"/>
+<instance part="PAD1" gate="1" x="231.14" y="134.62" rot="R180"/>
+<instance part="PAD2" gate="1" x="231.14" y="129.54" rot="R180"/>
+<instance part="PAD3" gate="1" x="231.14" y="124.46" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="228.6" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="124.46" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -6472,10 +6450,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="SV1" gate="G$1" pin="1"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="228.6" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="134.62" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="PAD1" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
@@ -6529,7 +6507,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="IC3" gate="G$1" pin="I/O_VCC"/>
 <wire x1="185.42" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="PAD2" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$4" class="0">
