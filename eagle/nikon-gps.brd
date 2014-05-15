@@ -1379,15 +1379,18 @@ MELF 0.25 W</description>
 </package>
 </packages>
 </library>
-<library name="wirepad">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+<library name="testpad">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SMD1,27-2,54">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<package name="TP12SQ">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.1998" dy="1.1998" layer="1" cream="no"/>
+<text x="-0.5999" y="0.65" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 </packages>
 </library>
@@ -1585,15 +1588,23 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 </autorouter>
 <elements>
 <element name="IC1" library="selfmade" package="GPS-A2235-H" value="GPS-A2235-H" x="4.49" y="11.33" rot="R90"/>
-<element name="IC2" library="selfmade" package="SOT23-5L" value="LP2985SOT" x="24.13" y="16.51"/>
+<element name="IC2" library="selfmade" package="SOT23-5L" value="LP2985SOT" x="24.13" y="12.7"/>
 <element name="IC3" library="selfmade" package="SC70-5L" value="MAX3370" x="15.24" y="26.67" rot="R270"/>
-<element name="C1" library="rcl" package="C0805" value="100n" x="25.4" y="20.6375"/>
+<element name="C1" library="rcl" package="C0805" value="10n" x="25.7175" y="16.1925"/>
 <element name="R1" library="rcl" package="M1206" value="10k" x="17.78" y="3.81" rot="R90"/>
 <element name="R2" library="rcl" package="M1206" value="2k2" x="14.605" y="3.81" rot="R90"/>
 <element name="R3" library="rcl" package="M1206" value="2k2" x="11.43" y="3.81" rot="R90"/>
-<element name="PAD1" library="wirepad" package="SMD1,27-2,54" value="" x="24.13" y="10.16" rot="R180"/>
-<element name="PAD2" library="wirepad" package="SMD1,27-2,54" value="" x="21.59" y="10.16" rot="R180"/>
-<element name="PAD3" library="wirepad" package="SMD1,27-2,54" value="" x="26.67" y="10.16" rot="R180"/>
+<element name="C2" library="rcl" package="C0805" value="1u" x="25.7175" y="18.415"/>
+<element name="C3" library="rcl" package="C0805" value="2u2" x="25.7175" y="20.6375"/>
+<element name="P3" library="testpad" package="TP12SQ" value="TPTP12SQ" x="24.13" y="6.35">
+<attribute name="TP_SIGNAL_NAME" value="" x="24.13" y="6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="P2" library="testpad" package="TP12SQ" value="TPTP12SQ" x="22.225" y="6.35">
+<attribute name="TP_SIGNAL_NAME" value="" x="22.225" y="6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="P1" library="testpad" package="TP12SQ" value="TPTP12SQ" x="26.035" y="6.35">
+<attribute name="TP_SIGNAL_NAME" value="" x="26.035" y="6.35" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1621,18 +1632,14 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <contactref element="IC3" pad="2"/>
 <contactref element="IC1" pad="6"/>
 <contactref element="IC1" pad="9"/>
-<contactref element="PAD3" pad="1"/>
 <wire x1="9.57" y1="7.52" x2="9.57" y2="4.4" width="0.4064" layer="1"/>
 <wire x1="9.57" y1="4.4" x2="10.16" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="10.16" y1="3.81" x2="19.3675" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="19.3675" y1="3.81" x2="19.685" y2="4.1275" width="0.4064" layer="1"/>
 <wire x1="18.46" y1="7.52" x2="19.4675" y2="7.52" width="0.4064" layer="1"/>
 <wire x1="19.4675" y1="7.52" x2="19.685" y2="7.3025" width="0.4064" layer="1"/>
-<wire x1="19.685" y1="7.3025" x2="19.685" y2="4.1275" width="0.4064" layer="1"/>
-<wire x1="19.685" y1="7.3025" x2="22.86" y2="7.3025" width="0.4064" layer="1"/>
-<wire x1="22.86" y1="7.3025" x2="26.3525" y2="7.3025" width="0.4064" layer="1"/>
-<wire x1="26.3525" y1="7.3025" x2="26.67" y2="7.62" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="7.62" x2="26.67" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="19.685" y1="7.3025" x2="19.685" y2="5.08" width="0.4064" layer="1"/>
+<wire x1="19.685" y1="5.08" x2="19.685" y2="4.1275" width="0.4064" layer="1"/>
 <wire x1="16.555" y1="19.585" x2="16.555" y2="17.045" width="0.4064" layer="1"/>
 <wire x1="16.555" y1="17.045" x2="16.555" y2="14.505" width="0.4064" layer="1"/>
 <wire x1="16.555" y1="14.505" x2="16.555" y2="11.965" width="0.4064" layer="1"/>
@@ -1642,20 +1649,16 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <wire x1="16.555" y1="11.385" x2="18.46" y2="9.48" width="0.4064" layer="1"/>
 <wire x1="14.39" y1="26.67" x2="20.0025" y2="26.67" width="0.3048" layer="1"/>
 <wire x1="20.0025" y1="26.67" x2="20.955" y2="25.7175" width="0.3048" layer="1"/>
-<wire x1="20.955" y1="25.7175" x2="20.955" y2="14.2875" width="0.3048" layer="1"/>
-<wire x1="20.955" y1="14.2875" x2="22.86" y2="12.3825" width="0.3048" layer="1"/>
-<wire x1="22.86" y1="12.3825" x2="22.86" y2="7.3025" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="25.7175" x2="20.955" y2="10.4775" width="0.3048" layer="1"/>
+<wire x1="20.955" y1="10.4775" x2="23.1775" y2="8.255" width="0.3048" layer="1"/>
 <wire x1="5.125" y1="19.585" x2="5.125" y2="17.045" width="0.3048" layer="1"/>
 <wire x1="5.125" y1="17.045" x2="5.125" y2="14.505" width="0.3048" layer="1"/>
 <wire x1="5.125" y1="14.505" x2="5.125" y2="11.965" width="0.3048" layer="1"/>
 <wire x1="5.125" y1="11.965" x2="16.02" y2="11.965" width="0.3048" layer="1"/>
 <wire x1="16.02" y1="11.965" x2="16.555" y2="11.43" width="0.3048" layer="1"/>
-<wire x1="24.13" y1="15.21" x2="24.13" y2="13.97" width="0.4064" layer="1"/>
-<wire x1="24.13" y1="13.97" x2="25.4" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="25.4" y1="12.7" x2="26.67" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="12.7" x2="26.67" y2="10.16" width="0.4064" layer="1"/>
-<wire x1="26.35" y1="20.6375" x2="26.67" y2="20.3175" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="20.3175" x2="26.67" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="24.13" y1="11.4" x2="24.13" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="24.13" y1="10.16" x2="25.4" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="25.4" y1="8.89" x2="26.67" y2="8.89" width="0.4064" layer="1"/>
 <polygon width="0.3048" layer="1" spacing="0.6096" isolate="0.4064">
 <vertex x="0" y="6.25"/>
 <vertex x="0" y="28.5" curve="-90"/>
@@ -1670,6 +1673,19 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <vertex x="6.25" y="3.25" curve="90"/>
 <vertex x="3.25" y="6.25"/>
 </polygon>
+<contactref element="C2" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="P1" pad="TP"/>
+<wire x1="23.1775" y1="5.08" x2="19.685" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="26.035" y1="6.35" x2="26.67" y2="6.985" width="0.3048" layer="1"/>
+<wire x1="26.67" y1="6.985" x2="26.67" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="23.1775" y1="8.255" x2="23.1775" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="23.1775" y1="5.08" x2="24.765" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="24.765" y1="5.08" x2="26.035" y2="6.35" width="0.3048" layer="1"/>
+<wire x1="26.6675" y1="20.6375" x2="26.6675" y2="18.415" width="0.3048" layer="1"/>
+<wire x1="26.6675" y1="18.415" x2="26.6675" y2="16.1925" width="0.3048" layer="1"/>
+<wire x1="26.67" y1="8.89" x2="26.67" y2="16.19" width="0.3048" layer="1"/>
+<wire x1="26.67" y1="16.19" x2="26.6675" y2="16.1925" width="0.3048" layer="1"/>
 </signal>
 <signal name="VANT">
 <contactref element="IC1" pad="11"/>
@@ -1678,22 +1694,29 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="IC3" pad="5"/>
-<contactref element="PAD1" pad="1"/>
 <wire x1="16.09" y1="27.32" x2="16.105" y2="27.305" width="0.3048" layer="1"/>
 <wire x1="16.105" y1="27.305" x2="20.32" y2="27.305" width="0.3048" layer="1"/>
 <wire x1="20.32" y1="27.305" x2="21.59" y2="26.035" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="26.035" x2="21.59" y2="15.875" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="15.875" x2="22.225" y2="15.24" width="0.3048" layer="1"/>
-<wire x1="22.225" y1="15.24" x2="23.15" y2="15.24" width="0.3048" layer="1"/>
-<wire x1="23.15" y1="15.24" x2="23.18" y2="15.21" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="15.21" x2="23.18" y2="16.195" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="16.195" x2="23.495" y2="16.51" width="0.3048" layer="1"/>
-<wire x1="25.08" y1="15.21" x2="25.08" y2="16.195" width="0.3048" layer="1"/>
-<wire x1="25.08" y1="16.195" x2="24.765" y2="16.51" width="0.3048" layer="1"/>
-<wire x1="24.765" y1="16.51" x2="23.495" y2="16.51" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="15.21" x2="23.18" y2="13.65" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="13.65" x2="24.13" y2="12.7" width="0.3048" layer="1"/>
-<wire x1="24.13" y1="12.7" x2="24.13" y2="10.16" width="0.3048" layer="1"/>
+<wire x1="21.59" y1="26.035" x2="21.59" y2="12.065" width="0.3048" layer="1"/>
+<wire x1="21.59" y1="12.065" x2="22.225" y2="11.43" width="0.3048" layer="1"/>
+<wire x1="22.225" y1="11.43" x2="23.15" y2="11.43" width="0.3048" layer="1"/>
+<wire x1="23.15" y1="11.43" x2="23.18" y2="11.4" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="11.4" x2="23.18" y2="12.385" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="12.385" x2="23.495" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="25.08" y1="11.4" x2="25.08" y2="12.385" width="0.3048" layer="1"/>
+<wire x1="25.08" y1="12.385" x2="24.765" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="24.765" y1="12.7" x2="24.13" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="24.13" y1="12.7" x2="23.495" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="11.4" x2="23.18" y2="9.84" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="9.84" x2="24.13" y2="8.89" width="0.3048" layer="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="P3" pad="TP"/>
+<wire x1="24.13" y1="6.35" x2="24.13" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="24.7675" y1="18.415" x2="23.8125" y2="18.415" width="0.3048" layer="1"/>
+<wire x1="23.8125" y1="18.415" x2="23.1775" y2="17.78" width="0.3048" layer="1"/>
+<wire x1="23.1775" y1="17.78" x2="23.1775" y2="15.875" width="0.3048" layer="1"/>
+<wire x1="23.1775" y1="15.875" x2="24.13" y2="14.9225" width="0.3048" layer="1"/>
+<wire x1="24.13" y1="14.9225" x2="24.13" y2="12.7" width="0.3048" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="IC2" pad="5"/>
@@ -1704,9 +1727,10 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <wire x1="15.24" y1="27.94" x2="20.6375" y2="27.94" width="0.3048" layer="1"/>
 <wire x1="20.6375" y1="27.94" x2="22.225" y2="26.3525" width="0.3048" layer="1"/>
 <wire x1="22.225" y1="26.3525" x2="22.225" y2="22.225" width="0.3048" layer="1"/>
-<wire x1="22.225" y1="22.225" x2="22.225" y2="19.685" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="17.81" x2="23.18" y2="18.73" width="0.3048" layer="1"/>
-<wire x1="23.18" y1="18.73" x2="22.225" y2="19.685" width="0.3048" layer="1"/>
+<wire x1="22.225" y1="22.225" x2="22.225" y2="21.9075" width="0.3048" layer="1"/>
+<wire x1="22.225" y1="21.9075" x2="22.225" y2="15.875" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="14" x2="23.18" y2="14.92" width="0.3048" layer="1"/>
+<wire x1="23.18" y1="14.92" x2="22.225" y2="15.875" width="0.3048" layer="1"/>
 <wire x1="5.76" y1="7.52" x2="5.76" y2="6.6225" width="0.3048" layer="1"/>
 <wire x1="5.76" y1="6.6225" x2="7.62" y2="4.7625" width="0.3048" layer="1"/>
 <wire x1="7.62" y1="4.7625" x2="7.62" y2="2.54" width="0.3048" layer="1"/>
@@ -1721,14 +1745,15 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <vertex x="22.225" y="20.955"/>
 <vertex x="22.225" y="23.495"/>
 </polygon>
+<contactref element="C3" pad="1"/>
+<wire x1="24.7675" y1="20.6375" x2="23.495" y2="20.6375" width="0.3048" layer="1"/>
+<wire x1="23.495" y1="20.6375" x2="22.225" y2="21.9075" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC2" pad="4"/>
 <contactref element="C1" pad="1"/>
-<wire x1="25.08" y1="17.81" x2="25.08" y2="18.735" width="0.4064" layer="1"/>
-<wire x1="25.08" y1="18.735" x2="24.4475" y2="19.3675" width="0.4064" layer="1"/>
-<wire x1="24.4475" y1="19.3675" x2="24.4475" y2="20.635" width="0.4064" layer="1"/>
-<wire x1="24.4475" y1="20.635" x2="24.45" y2="20.6375" width="0.4064" layer="1"/>
+<wire x1="25.08" y1="14" x2="25.08" y2="15.88" width="0.3048" layer="1"/>
+<wire x1="25.08" y1="15.88" x2="24.7675" y2="16.1925" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC1" pad="21"/>
@@ -1747,12 +1772,12 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 </signal>
 <signal name="N$3">
 <contactref element="IC3" pad="4"/>
-<contactref element="PAD2" pad="1"/>
 <wire x1="16.09" y1="26.02" x2="19.7" y2="26.02" width="0.3048" layer="1"/>
 <wire x1="19.7" y1="26.02" x2="20.32" y2="25.4" width="0.3048" layer="1"/>
-<wire x1="20.32" y1="25.4" x2="20.32" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="10.16" x2="21.59" y2="12.7" width="0.3048" layer="1"/>
-<wire x1="21.59" y1="12.7" x2="20.32" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="10.16" width="0.3048" layer="1"/>
+<wire x1="22.225" y1="8.255" x2="20.32" y2="10.16" width="0.3048" layer="1"/>
+<contactref element="P2" pad="TP"/>
+<wire x1="22.225" y1="6.35" x2="22.225" y2="8.255" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="IC1" pad="7"/>
@@ -1816,6 +1841,11 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 <wire x1="6.35" y1="9.2075" x2="3.81" y2="9.2075" width="0.3048" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="5,1,f72f6c9d1afb8a94"/>
+<approved hash="5,1,dd08db2126212008"/>
+<approved hash="5,1,6560ff138b8f10fd"/>
+</errors>
 </board>
 </drawing>
 </eagle>
