@@ -5,19 +5,29 @@ All parts listed here are subject to change.
 
 |  Item description |       Part No.      |  Size | Qty | Est. Price (Total, €) |
 | ----------------- | ------------------- | ----- | --- | --------------------: |
-| GPS Module        | Maestro A2235-H     |       |   1 |             11.45 [1] |
-| Voltage Regulator | LP29985-33          | SOT23 |   1 |                  0.84 |
+| GPS Module        | Maestro A2235-H     |       |   1 |             13.73 [1] |
+| Voltage Regulator | LP29985-33          | SOT23 |   1 |                  0.57 |
+| Level Shifter     | MAX3370             | 5SC70 |   1 |                  2.65 |
 | Resistor          | 10 kOhm             | 1206  |   1 |                  0.10 |
 | Resistor          | 2.2 kOhm            | 1206  |   2 |                  0.20 |
-| Level Shifter     | MAX3370             | 5SC70 |   1 |                  2.83 |
+| Capacitor         | 10 nF               | 0805  |   1 |                  0.13 |
+| Capacitor         | 1 µF                | 0805  |   1 |                  0.20 |
+| Capacitor         | 2.2 µF              | 0805  |   1 |                  0.44 |
+| Housing           | Hammond 1551NBK     |       |   1 |                  2.26 |
 | PCB               |                     |       |   1 |                 ~5.00 |
-| Housing           |                     |       |   1 |                 ~3.50 |
-| Cable             | From Remote Trigger |       |   1 |                 ~3.00 |
-| **Grand Total**   |                     |       |     |            **~26.92** |
+| Cable             | From Remote Trigger |       |   1 |             ~5.00 [2] |
+| **Grand Total**   |                     |       |     |            **~30.28** |
 
 1: Mouser offers the module to the cheapest price I could find. However, they
 have extremely high shipping fees to Germany. Probably makes only sense when
-ordering in bulk. Farnell offers the module for ~19€.
+ordering in bulk. Farnell offers the module for ~19€. If you are from Germany as
+well, the nice folks at
+[mikrocontroller.net](http://www.mikrocontroller.net/topic/320223#new) are
+regularly doing Mouser bulk orders in which you can take part.
+
+2: The _really_ cheap triggers are sometimes missing the second row of pins in
+the connector (verify with product images). So maybe take one of the slightly
+more expensive ones to be sure.
 
 1 x 10kOhm resistors is needed as pull-up for GPIO6 of GPS module (to enable
 UART mode). A switch is not required according to the latest user manual of the
