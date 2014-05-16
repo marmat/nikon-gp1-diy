@@ -11,10 +11,10 @@ required. Instead, we can attach the GPS module directly to the camera.
 
 ```
 [x] planning, searching for parts
-[i] schematics design
-[ ] functional prototype
-[ ] PCB design
-[ ] housing design
+[x] schematics design
+[i] PCB design
+[ ] functional prototype: parts ordered; waiting for arrival
+[-] housing design: using an off-the-shelf case for now
 
 i = in progress, x = done
 ```
@@ -41,6 +41,22 @@ Required Parts
 * Housing for the parts, ideally fitting on camera's the hot shoe mount.
 * Supporting electronics for voltage regulation etc.
 
+**Note regarding the remote trigger:** usually they have only 3 pins wired (GND,
+Focus & Shutter). That means you have to take the connector apart, resolder the
+wires to GND, +5V and GPS Data and then glue the connector back together. In my case, I have done the following:
+
+1. Cut the plastic connector with an x-acto knife along the visible seam (from
+   injection molding ?)
+2. Rewiring is straightforward, you can reuse the orignal cable because 3 wires
+   are sufficient for our purpose.
+3. When putting the two halves back together I noticed a small gap. Therefore
+   I've used a dremel tool to make a bit more room for the cable in the interior
+   of the connector.
+4. Apply plastic glue to the connector's inside surface and use a vise to press
+   the parts together.
+5. After the glue has dried, there's almost no visible indication of the
+   disassembly, I hope the cable will be just as durable as the unmodified one.
+
 A rough list of required parts and first sketches of the casing can be found in
 [PARTLIST.md](PARTLIST.md).
 
@@ -58,6 +74,11 @@ power up the module after power has been supplied. We can either do this
 manually (using a push-button) or possibly also automatically ~1s after
 plugging the device in.
 
+Update: there is no need for a switch, according to a more recent revision of
+the documentation the module supports self-starting by connecting the WAKEUP to
+the ON/OFF pin. All in all, this is the module I have settled one because it's
+also the most competitive one with regards to pricing.
+
 
 ### Housing
 
@@ -67,6 +88,10 @@ printing might be a good option in order to get a fitting mount for DSLR hot
 shoes. For those who don't own a 3D printer (including me), this can be done
 e.g. in your local [FabLab](http://en.wikipedia.org/wiki/Fablab) either very
 cheaply or usually even for free.
+
+Update: as you can see in [PARTLIST.md](PARTLIST.md) I will be using an
+off-the-shelf case for now. By coincidence, the Hammond 1551N case has pretty
+much the perfect size.
 
 
 ### Supporting Electronics
