@@ -19,9 +19,9 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -74,8 +74,8 @@
 <hole x="23.5" y="3" drill="2.5"/>
 <hole x="6" y="26.5" drill="2.5"/>
 <hole x="10.85" y="15.75" drill="3"/>
-<text x="0.98425" y="26.8605" size="1.778" layer="1" font="vector" ratio="10">M</text>
-<text x="1.74625" y="25.49525" size="1.778" layer="1" font="vector" ratio="10">M</text>
+<text x="11.557" y="26.70175" size="1.778" layer="1" font="vector" ratio="10" rot="R90">M</text>
+<text x="12.92225" y="27.46375" size="1.778" layer="1" font="vector" ratio="10" rot="R90">M</text>
 </plain>
 <libraries>
 <library name="selfmade">
@@ -1590,23 +1590,53 @@ minimale Strichstärke: &lt;b&gt;0.2 mm&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="selfmade" package="GPS-A2235-H" value="GPS-A2235-H" x="4.49" y="11.33" rot="R90"/>
-<element name="IC2" library="selfmade" package="SOT23-5L" value="LP2985SOT" x="24.13" y="12.7"/>
+<element name="IC1" library="selfmade" package="GPS-A2235-H" value="GPS-A2235-H" x="4.49" y="11.33" smashed="yes" rot="R90">
+<attribute name="NAME" x="0.3625" y="24.3475" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="21.635" y="7.52" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="IC2" library="selfmade" package="SOT23-5L" value="LP2985SOT" x="24.13" y="12.7" smashed="yes">
+<attribute name="NAME" x="22.225" y="11.43" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="22.225" y="9.271" size="1.27" layer="27"/>
+</element>
 <element name="IC3" library="selfmade" package="SC70-5L" value="MAX3370" x="15.24" y="26.67" rot="R270"/>
-<element name="C1" library="rcl" package="C0805" value="10n" x="25.7175" y="16.1925"/>
-<element name="R1" library="rcl" package="M1206" value="10k" x="17.78" y="3.81" rot="R90"/>
-<element name="R2" library="rcl" package="M1206" value="2k2" x="14.605" y="3.81" rot="R90"/>
-<element name="R3" library="rcl" package="M1206" value="2k2" x="11.43" y="3.81" rot="R90"/>
-<element name="C2" library="rcl" package="C0805" value="1u" x="25.7175" y="18.415"/>
-<element name="C3" library="rcl" package="C0805" value="2u2" x="25.7175" y="20.6375"/>
-<element name="P3" library="testpad" package="TP12SQ" value="TPTP12SQ" x="24.13" y="6.35">
-<attribute name="TP_SIGNAL_NAME" value="" x="24.13" y="6.35" size="1.778" layer="27" display="off"/>
+<element name="C1" library="rcl" package="C0805" value="10n" x="25.7175" y="16.1925" smashed="yes">
+<attribute name="NAME" x="23.495" y="15.24" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="24.4475" y="13.6525" size="1.27" layer="27"/>
 </element>
-<element name="P2" library="testpad" package="TP12SQ" value="TPTP12SQ" x="21.59" y="6.35">
-<attribute name="TP_SIGNAL_NAME" value="" x="21.59" y="6.35" size="1.778" layer="27" display="off"/>
+<element name="R1" library="rcl" package="M1206" value="10k" x="17.78" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.8275" y="4.7625" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="20.32" y="2.54" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="P1" library="testpad" package="TP12SQ" value="TPTP12SQ" x="26.3525" y="6.35">
-<attribute name="TP_SIGNAL_NAME" value="" x="26.3525" y="6.35" size="1.778" layer="27" display="off"/>
+<element name="R2" library="rcl" package="M1206" value="2k2" x="14.605" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.6525" y="4.445" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="17.145" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R3" library="rcl" package="M1206" value="2k2" x="11.43" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="10.4775" y="4.445" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="13.97" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C2" library="rcl" package="C0805" value="1u" x="25.7175" y="18.415" smashed="yes">
+<attribute name="NAME" x="23.495" y="17.4625" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="24.4475" y="15.875" size="1.27" layer="27"/>
+</element>
+<element name="C3" library="rcl" package="C0805" value="2u2" x="25.7175" y="20.6375" smashed="yes">
+<attribute name="NAME" x="23.495" y="19.685" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="24.4475" y="18.0975" size="1.27" layer="27"/>
+</element>
+<element name="P3" library="testpad" package="TP12SQ" value="TPTP12SQ" x="24.13" y="6.35" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="24.13" y="3.81" size="1" layer="37"/>
+<attribute name="NAME" x="24.765" y="7.3025" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.622" y="5.715" size="0.0254" layer="27"/>
+</element>
+<element name="P2" library="testpad" package="TP12SQ" value="TPTP12SQ" x="21.59" y="6.35" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="21.59" y="3.81" size="1" layer="37"/>
+<attribute name="NAME" x="22.21" y="7.3376" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="21.082" y="5.715" size="0.0254" layer="27"/>
+</element>
+<element name="P1" library="testpad" package="TP12SQ" value="TPTP12SQ" x="26.3525" y="6.35" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="26.3525" y="3.81" size="1" layer="37"/>
+<attribute name="NAME" x="26.9875" y="7.3025" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.8445" y="5.715" size="0.0254" layer="27"/>
 </element>
 </elements>
 <signals>
