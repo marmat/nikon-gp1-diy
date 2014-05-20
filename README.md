@@ -13,7 +13,7 @@ required. Instead, we can attach the GPS module directly to the camera.
 [x] planning, searching for parts
 [x] schematics design
 [i] PCB design
-[ ] functional prototype: parts ordered; waiting for arrival
+[i] functional prototype: see [BUILD.md](BUILD.md)
 [-] housing design: using an off-the-shelf case for now
 
 i = in progress, x = done
