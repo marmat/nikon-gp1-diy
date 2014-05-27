@@ -3,6 +3,29 @@ Building Log
 
 (sorted most recent first)
 
+## 5/27/14 - Assembling the Device
+
+Soldering of the parts was easier than expected, even the small MAX3370 could be
+soldered without too many issues. Before connecting the board to the camera, an
+electrical check has been performed first (to make sure no pads are erroneously
+shorted) and then a scope has been attached to the data output to make sure the
+GPS module is operating normally. The device was powered by an external power
+supply with 5.5V output. While only an analog scope was available, it was
+sufficient to see the NMEA data bursts coming in with a regular interval (image
+links to youtube):
+
+[![Functional Test](http://img.youtube.com/vi/M3ckGG12SQM/0.jpg)](http://www.youtube.com/watch?v=M3ckGG12SQM)
+
+The board was then placed inside the case and connected to the camera. It works!
+
+![Camera Display](camera.jpg)
+
+After waiting for about 30 - 60 seconds for the first GPS fix, the camera is
+able to show the location and photographs are automatically tagged with said
+location. The last step to complete the project is to connect the case with a
+hot shoe cap such that the module can be attached securely to the camera body.
+
+
 ## 5/27/14 - Milling the PCB
 
 During an appointment at my local [FabLab](https://hci.rwth-aachen.de/fablab), I
