@@ -1,6 +1,24 @@
 Building Log
 ============
 
+(sorted most recent first)
+
+## 5/27/14 - Milling the PCB
+
+During an appointment at my local [FabLab](https://hci.rwth-aachen.de/fablab), I
+could use a mill to create a prototype of the PCB. In contrast to
+photoengraving, milling a small board is much faster and cleaner because no
+chemicals have to be used for etching the copper. Milling the 28.5mm x 28.5mm
+board took about 10-15 minutes:
+
+![PCB](pcb.jpg)
+
+With the PCB being the last missing component, we can now assemble the device,
+check if it operates normally when supplying current and finally try to connect
+it to the camera. Soldering the MAX3370 level shifter will probably be the most
+complicated part as it comes in a very small package (0.65mm pin distance).
+
+
 ## 5/20/14 - Received the parts
 
 While the PCB is not done yet, I could do first experiments with the Hammond

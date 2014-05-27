@@ -9,11 +9,13 @@ required. Instead, we can attach the GPS module directly to the camera.
 
 **Project Status:**
 
+See also the [Building Log](BUILD.md).
+
 ```
 [x] planning, searching for parts
 [x] schematics design
-[i] PCB design
-[i] functional prototype: see [BUILD.md](BUILD.md)
+[x] PCB design
+[i] functional prototype
 [-] housing design: using an off-the-shelf case for now
 
 i = in progress, x = done
