@@ -3,6 +3,19 @@ Building Log
 
 (sorted most recent first)
 
+## 5/28/14 - Attaching a hot shoe cover
+
+Using plastic glue and a thin sheet of plastic between the hot shoe cover and
+the case, I have attached the device such that it easily slides in and out of
+the hot shoe mount of DSLRs. This ensures a stable mount without any dangling
+parts and good reception because the device sits on top of the camera, with the
+GPS antenna facing straight toward the sky. With that, the GPS module is
+finished and can be used in a practical setting!
+
+![The finished device](finished.jpg)
+![Mounted on a camera](mounted_side.jpg)
+
+
 ## 5/27/14 - Assembling the Device
 
 Soldering of the parts was easier than expected, even the small MAX3370 could be

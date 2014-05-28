@@ -7,19 +7,9 @@ expensive (~200€). In this project I'll try to build an equivalent module usin
 low-cost components. If everything works out as planned, no microcontroller is
 required. Instead, we can attach the GPS module directly to the camera.
 
-**Project Status:**
+**Project Status:** done!
 
 See also the [Building Log](BUILD.md).
-
-```
-[x] planning, searching for parts
-[x] schematics design
-[x] PCB design
-[x] functional prototype
-[i] housing design: using an off-the-shelf case for now
-
-i = in progress, x = done
-```
 
 
 Nikon GPS Port Specs
