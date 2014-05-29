@@ -15,7 +15,7 @@ See also the [Building Log](BUILD.md).
 Nikon GPS Port Specs
 --------------------
 
-![Connector](connector.jpg)
+![Connector](images/connector.jpg)
 
 * Proprietary 8-pin connector,
   [pinout](http://pinoutsguide.com/DigitalCameras/nikon_d90_pinout.shtml)

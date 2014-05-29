@@ -12,8 +12,8 @@ parts and good reception because the device sits on top of the camera, with the
 GPS antenna facing straight toward the sky. With that, the GPS module is
 finished and can be used in a practical setting!
 
-![The finished device](finished.jpg)
-![Mounted on a camera](mounted_side.jpg)
+![The finished device](images/finished.jpg)
+![Mounted on a camera](images/mounted_side.jpg)
 
 
 ## 5/27/14 - Assembling the Device
@@ -31,7 +31,7 @@ links to youtube):
 
 The board was then placed inside the case and connected to the camera. It works!
 
-![Camera Display](camera.jpg)
+![Camera Display](images/camera.jpg)
 
 After waiting for about 30 - 60 seconds for the first GPS fix, the camera is
 able to show the location and photographs are automatically tagged with said
@@ -47,7 +47,7 @@ photoengraving, milling a small board is much faster and cleaner because no
 chemicals have to be used for etching the copper. Milling the 28.5mm x 28.5mm
 board took about 10-15 minutes:
 
-![PCB](pcb.jpg)
+![PCB](images/pcb.jpg)
 
 With the PCB being the last missing component, we can now assemble the device,
 check if it operates normally when supplying current and finally try to connect

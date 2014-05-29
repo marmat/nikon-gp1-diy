@@ -58,7 +58,7 @@ of the A2235-H and adding some space for the cable and additional components,
 the case could have approx 20mm x 28mm x 7mm inner dimensions, plus width of
 plastic about 24mm x 32mm x 11mm:
 
-![Sketch](sketch.png)
+![Sketch](images/sketch.png)
 
 I do not know anything about 3D printing yet, thus it would have to be evaluated
 if such dimensions are viable for printining (in terms of thickness etc.) at
@@ -82,13 +82,13 @@ pretty good: 35mm x 35mm x 15mm with max. inner dimensions of 28.7mm x 28.7mm x
 first prototype. Here's a paper model with dimensions of the 1551NBK on top of a
 Nikon D5000:
 
-![Paper Prototype](paper_proto.jpg)
+![Paper Prototype](images/paper_proto.jpg)
 
 Alternatively, the cable could be removed completely and instead the plug
 soldered directly onto the board. This might allow the module to be mounted to
 the camera's side if all the dimensions work out (tbd):
 
-![Paper Prototype 2](paper_proto2.jpg)
+![Paper Prototype 2](images/paper_proto2.jpg)
 
 Subtracting the boss height and PCB thickness, we have 6.4mm height left for
 compontents. This is **not enough** to fit the GPS module with a max. height of
