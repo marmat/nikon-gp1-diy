@@ -48,7 +48,7 @@ Requirements
 |  ID |  Item description |     Part No.    |  Size |
 | --- | ----------------- | --------------- | ----- |
 | IC1 | GPS Module        | Maestro A2235-H |       |
-| IC2 | Voltage Regulator | LP29985-33      | SOT23 |
+| IC2 | Voltage Regulator | LP2985-33       | SOT23 |
 | IC3 | Level Shifter     | MAX3370         | 5SC70 |
 | R1  | Resistor          | 10 kOhm         | 1206  |
 | R2  | Resistor          | 2.2 kOhm        | 1206  |
